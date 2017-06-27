@@ -1,12 +1,14 @@
-minikube image for china user!
-for version v0.19.1
+# minikube(v0.19.1) image for china user
 
-~~~start minikube with DaoCloud 
+## start minikube with DaoCloud 
 
+~~~
 minikube start --registry-mirror=http://44d249ac.m.daocloud.io
+~~~
 
-~~~pull image and tag it
+## pull image and tag
 
+~~~
 docker pull dockermonster/pause-amd64:3.0
 docker tag dockermonster/pause-amd64:3.0 gcr.io/google_containers/pause-amd64:3.0
 
@@ -27,3 +29,4 @@ docker tag dockermonster/k8s-dns-dnsmasq-nanny-amd64:1.14.2 gcr.io/google_contai
 
 docker pull dockermonster/k8s-dns-sidecar-amd64:1.14.2
 docker tag dockermonster/k8s-dns-sidecar-amd64:1.14.2 gcr.io/google_containers/k8s-dns-sidecar-amd64:1.14.2
+~~~
